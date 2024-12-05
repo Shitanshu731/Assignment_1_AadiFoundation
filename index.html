@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+      .container {
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        gap: 20px;
+      }
+      .column {
+        flex: 1;
+      }
+      .divider {
+        width: 2px;
+        background-color: #ccc;
+        margin: 0 20px;
+      }
+      .header {
+        text-align: center;
+        margin: 20px 0;
+        position: relative;
+      }
+      .header h1 {
+        font-size: 2.5em;
+        margin: 0;
+        letter-spacing: 3px;
+      }
+      .header h2 {
+        font-size: 1.2em;
+        margin: 10px 0;
+        font-weight: normal;
+        color: #555;
+      }
+      .header .line {
+        border-top: 1px solid #ccc;
+        margin: 10px auto;
+        width: 80%;
+      }
+      .section {
+        margin: 20px 0;
+      }
+      .section h3 {
+        margin: 0 0 10px;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        color: #333;
+      }
+      .contact ul,
+      .work-experience ul {
+        list-style: none;
+        padding: 0;
+      }
+      .contact ul li,
+      .work-experience ul li {
+        margin: 5px 0;
+      }
+      .contact ul li a {
+        text-decoration: none;
+        color: #007bff;
+      }
+      .skills p,
+      .education p,
+      .about p {
+        margin: 0;
+      }
+      .work-experience ul {
+        list-style: disc;
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Your Name</h1>
+      <div class="line"></div>
+      <h2>Your Title</h2>
+      <div class="line"></div>
+    </div>
+
+    <div class="container">
+      <div class="column">
+        <div class="contact section">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              Email:
+              <a href="mailto:your-email@example.com">your-email@example.com</a>
+            </li>
+            <li>
+              GitHub:
+              <a href="https://github.com/gh-username" target="_blank"
+                >gh-username</a
+              >
+            </li>
+            <li>
+              LinkedIn:
+              <a
+                href="https://linkedin.com/in/linkedin-username"
+                target="_blank"
+                >linkedin-username</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="skills section">
+          <h3>Skills</h3>
+          <p>HTML, CSS, GitHub, VS Code...</p>
+        </div>
+
+        <div class="education section">
+          <h3>Education</h3>
+          <p><strong>Your Major</strong></p>
+          <p>Your university or school</p>
+          <p>2018-2022</p>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="column">
+        <div class="about section">
+          <h3>About</h3>
+          <p>
+            A brief paragraph about you and what kind of company you want to
+            work for.
+          </p>
+        </div>
+
+        <div class="work-experience section">
+          <h3>Work Experience</h3>
+          <h4>Job Title</h4>
+          <p>Company Name | 2008 - 2010</p>
+          <p>
+            Describe what you did in this position with one summary sentence and
+            no more than 3 bullet points with specific highlights:
+          </p>
+          <ul>
+            <li>Cool accomplishment</li>
+            <li>Cool accomplishment</li>
+            <li>Cool accomplishment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
